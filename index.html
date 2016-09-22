@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en_US">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="stylesheet" href="skin/main.css" />
@@ -8,13 +8,27 @@
 	</head>
 	<body>
 		<header>
-			<nav></nav>
-			<div id="search"></div>
-			<div id="login"></div>
+			<nav>
+				<div class="navitem"><a href="#">Home</a></div>
+				<div class="navitem"><a href="draw">Drawing</a></div>
+				<div class="navitem"><a href="cos">COS</a></div>
+				<div class="navitem"><a href="idol">Idol</a></div>
+				<div class="navitem"><a href="activity">Activity</a></div>
+			</nav>
+			<div id="search">
+				<form action="search.php">
+					<input type="text" name="q" />
+					<input type="submit" name="s" />
+				</form>
+			</div>
+			<div class="navitem" id="login"><a href="login.php">Login/Register</a></div>
+			<div id="lang"><a href="?lang=zh_CN">zh_CN</a>|<a href="?lang=zh_TW">zh_TW</a></div>
 		</header>
 		<content>
 			<section id="tophit"></section>
-
+			<section id="cos"></section>
+			<section id="draw"></section>
+			<section id="idol"></section>
 		</content>
 		<footer>
 			<div id="fb" class="share"></div>
