@@ -1,0 +1,18 @@
+/* TEAM */
+	Chef: Staph. aureus
+	Contact: admin [at] hanfubk.com
+	From: State College, PA, US
+
+	Design: Sora
+	Contact: You'd better not know
+	From: State College, PA, US
+
+/* SITE */
+	Last update: 2016-09-23
+	Languages: en_US, zh_CN, zh_TW
+	Doctype: HTML 5
+
+/* CONTACT */
+	Comments, Suggestions, and Blaims go to
+	https://github.com/StephDC/ACGClub ,
+	our main development site.
