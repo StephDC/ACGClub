@@ -1,0 +1,8 @@
+#! /usr/bin/env python3
+def main():
+    print('<div class="navitem"><a href="/">Home</a></div>')
+    for i in ['Drawing','COS','Idol','Gaming','Activity']:
+        print('<div class="navitem"><a href="'+i.lower()+'">'+i+'</a></div>')
+
+if __name__ == '__main__':
+    main()
