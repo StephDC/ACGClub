@@ -17,13 +17,16 @@
 				<div class="navitem"><a href="game">Gaming</a></div>
 				<div class="navitem"><a href="activity">Activity</a></div>
 			</nav>
+			<div id="login"><a href="login.php">Login</a></div>
 			<div id="search">
-				<form action="search.php">
-					<input type="text" name="q" />
-					<input type="submit" name="s" />
-				</form>
+				<div id="sicon"><img src="skin/asset/search.svg" alt="Search" /></div>
+				<div id="sform">
+					<form action="search.php">
+						<input type="text" name="q" />
+						<input type="submit" name="s" />
+					</form>
+				</div>
 			</div>
-			<div id="login"><a href="login.php">Login/Register</a></div>
 			<div id="lang">
 				<a href="?lang=en_US">En</a>
 				<a href="?lang=zh_CN">简</a>
@@ -31,6 +34,12 @@
 			</div>
 		</header>
 		<content>
+			<section id="logo">
+				<video autoplay loop>
+					<source type="video/mp4" src="skin/asset/bg.mp4" />
+					<img src="bg.png" alt="" />
+				</video>
+			</section>
 			<section id="tophit"></section>
 			<section id="cos"></section>
 			<section id="draw"></section>

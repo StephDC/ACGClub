@@ -8,18 +8,27 @@ a {
 #search form {
 	display: none;
 }
-nav {
-	width: 100%;
+header {
+	width: 980px;
+	margin: 0 auto;
+}
+header a{
+	font-size: 1.4em;
+	margin: 0 1px;
 }
 .navitem{
 	display: inline;
 }
+.navitem:first-child a{
+	border-radius: 10px 0 0 10px;
+}
 .navitem a {
 	display: block;
-	width: 100px;;
+	width: 120px;;
 	height: 50px;
 	float: left;
 	text-align: center;
+	line-height: 50px;
 	color:#032f5c;
 	transition: color 0.5s, background-color 0.5s;
 }
@@ -27,25 +36,37 @@ nav {
 	background-color:#f3c0b0;
 	color:#ffffff;
 }
-.navitem .selected {
+header .selected {
 	background-color:#eb88a5;
 	color:#ffffff;
 }
-.navitem .selected:hover{
+header .selected:hover{
 	background-color:#eb88a5;
 	color:#ffffff;
 }
 #login a{
 	display: block;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
 	float: right;
+	border-radius: 0 10px 10px 0;
+	padding: 0 0.5em;
 	color: #032f5c;
-	transition: color 0.5s, background-color: 0.5s;
+	transition: color 0.5s, background-color 0.5s;
+}
+#login a:hover{
+	background-color: #f3c0b0;
+	color: #fff;
 }
 #lang a{
 	display: block;
 	width: 30px;
 	height: 30px;
+	line-height: 30px;
+	text-align: center;
 	float: right;
+	margin: 10px 0;
 	color: #032f5c;
 	transition: color 0.5s, background-color 0.5s;
 }
@@ -53,11 +74,12 @@ nav {
 	background-color: #f3c0b0;
 	color: #ffffff;
 }
-#lang .selected {
-	background-color: #eb88a5;
-	color: #ffffff;
+#sicon img{
+	float: right;
+	margin: 0 1px;
+	width: 50px;
+	transition: background-color 0.5s;
 }
-#lang .selected:hover{
-	background-color: #eb88a5;
-	color: #ffffff;
+#sicon img:hover{
+	background-color: #f3c0b0;
 }
