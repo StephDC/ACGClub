@@ -50,6 +50,7 @@ header a{
 header .selected {
 	background-color:#eb88a5 !important;
 	color:#ffffff !important;
+	/* cursor: default !important; */
 }
 header .selected:hover{
 	background-color:#eb88a5 !important;
