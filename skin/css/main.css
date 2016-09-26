@@ -120,10 +120,28 @@ header .selected:hover{
 }
 #logo img{
 	position: absolute;
-	top: 50px;
+	top: 55px;
 	left: 50%;
-	width: 390px;
-	margin-left: -195px;
+	width: 360px;
+	margin-left: -180px;
+}
+#logo svg{
+	position: absolute;
+	left: 50%;
+}
+#bg1 svg{
+	top: 55px;
+	width: 340px;
+	margin-left: -170px;
+	fill: white;
+	opacity: 0.8;
+}
+#bg2 svg{
+	top: 25px;
+	width: 400px;
+	margin-left: -200px;
+	fill: white;
+	opacity: 0.3;
 }
 section{
 	width: 940px;
