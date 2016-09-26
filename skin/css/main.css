@@ -128,3 +128,21 @@ section{
 	width: 940px;
 	margin: 0 auto;
 }
+/* Footer */
+footer{
+	text-align: center;
+}
+.share {
+	display: inline-block;
+	text-align: center;
+	margin: 0 13px;
+}
+.share figure{
+	margin: 0;
+}
+.share figure figcaption{
+	font-size:10px;
+}
+.share img{
+	width:63px;
+}
