@@ -28,7 +28,7 @@ header a{
 	display: inline;
 }
 .navitem:first-child a{
-	border-radius: 10px 0 0 10px;
+	border-radius: 0 0 0 10px;
 	margin: 0 1px 0 0;
 }
 .navitem a {
@@ -60,7 +60,7 @@ header .selected:hover{
 	line-height: 50px;
 	text-align: center;
 	float: right;
-	border-radius: 0 10px 10px 0;
+	border-radius: 0 0 10px 0;
 	width: 110px;
 	background-color: #ffffff;
 	color: #032f5c;
@@ -91,6 +91,7 @@ header .selected:hover{
 	float: right;
 	margin: 0 1px;
 	width: 50px;
+	cursor: pointer;
 	transition: background-color 0.5s;
 }
 #sicon img:hover{
@@ -118,8 +119,8 @@ header .selected:hover{
 	position: absolute;
 	top: 50px;
 	left: 50%;
-	width: 340px;
-	margin-left: -170px;
+	width: 390px;
+	margin-left: -195px;
 }
 section{
 	width: 940px;
