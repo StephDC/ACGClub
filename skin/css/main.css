@@ -110,6 +110,10 @@ header .selected:hover{
 	min-height: 400px;
 	margin: auto 0;
 }
+/* This fixes the play button for the background video for iOS */
+#logo video::-webkit-media-controls-start-playback-button {
+	display: none !important;
+}
 #logo img{
 	position: absolute;
 	top: 50px;
