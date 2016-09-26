@@ -46,13 +46,14 @@ header a{
 	background-color:#f3c0b0;
 	color:#ffffff;
 }
+/* These selected items have the important styles */
 header .selected {
-	background-color:#eb88a5;
-	color:#ffffff;
+	background-color:#eb88a5 !important;
+	color:#ffffff !important;
 }
 header .selected:hover{
-	background-color:#eb88a5;
-	color:#ffffff;
+	background-color:#eb88a5 !important;
+	color:#ffffff !important;
 }
 #login a{
 	display: block;
