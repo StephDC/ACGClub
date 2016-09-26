@@ -148,6 +148,13 @@ section{
 	width: 940px;
 	margin: 0 auto;
 }
+section h2{
+	margin: 1em 0 0 0;
+}
+section h2 img{
+	height: 1em;
+	margin-right: 2em;
+}
 /* Footer */
 footer{
 	text-align: center;
