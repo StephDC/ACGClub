@@ -1,16 +1,24 @@
 body {
 	margin: 0;
 	padding: 0;
+	background-color: #f5f5f5;
 }
 a {
 	text-decoration: none;
 }
+/* Header */
 #search form {
 	display: none;
 }
 header {
 	width: 980px;
-	margin: 0 auto;
+	height: 50px;
+	left: 50%;
+	position: fixed;
+	margin: 0 -490px;
+	background-color: #fff;
+	border-radius: 10px;
+	z-index: 100;
 }
 header a{
 	font-size: 1.4em;
@@ -21,14 +29,16 @@ header a{
 }
 .navitem:first-child a{
 	border-radius: 10px 0 0 10px;
+	margin: 0 1px 0 0;
 }
 .navitem a {
 	display: block;
-	width: 120px;;
+	width: 110px;
 	height: 50px;
 	float: left;
 	text-align: center;
 	line-height: 50px;
+	background-color: #fff;
 	color:#032f5c;
 	transition: color 0.5s, background-color 0.5s;
 }
@@ -51,9 +61,11 @@ header .selected:hover{
 	text-align: center;
 	float: right;
 	border-radius: 0 10px 10px 0;
-	padding: 0 0.5em;
+	width: 110px;
+	background-color: #ffffff;
 	color: #032f5c;
 	transition: color 0.5s, background-color 0.5s;
+	margin: 0 0 0 1px;
 }
 #login a:hover{
 	background-color: #f3c0b0;
@@ -65,6 +77,7 @@ header .selected:hover{
 	height: 30px;
 	line-height: 30px;
 	text-align: center;
+	font-size: 1em;
 	float: right;
 	margin: 10px 0;
 	color: #032f5c;
@@ -82,4 +95,29 @@ header .selected:hover{
 }
 #sicon img:hover{
 	background-color: #f3c0b0;
+}
+/* Body */
+#logo{
+	width: 100%;
+	height: 400px;
+	overflow: hidden;
+}
+#logo video{
+	z-index: -1;
+	position: relative;
+	width: 100%;
+	min-width: 720px;
+	min-height: 400px;
+	margin: auto 0;
+}
+#logo img{
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	width: 340px;
+	margin-left: -170px;
+}
+section{
+	width: 940px;
+	margin: 0 auto;
 }
