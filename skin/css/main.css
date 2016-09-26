@@ -5,6 +5,7 @@ body {
 }
 a {
 	text-decoration: none;
+	color: #000;
 }
 /* Header */
 #search form {
@@ -135,14 +136,29 @@ footer{
 .share {
 	display: inline-block;
 	text-align: center;
-	margin: 0 13px;
 }
 .share figure{
-	margin: 0;
+	margin: 0 13px;
 }
 .share figure figcaption{
 	font-size:10px;
 }
 .share img{
 	width:63px;
+}
+.hline{
+	width:100%;
+	height: 1px;
+	background-color: #000;
+	margin: 5px 0;
+	clear: both;
+}
+#copyleft{
+	text-align: left;
+	width: 960px;
+	margin: 0 auto;
+}
+#copyleft img{
+	height: 31px;
+	margin: 0 10px;
 }
