@@ -100,7 +100,7 @@ header .selected:hover{
 	margin: 0 1px;
 	cursor: pointer;
 }
-#sicon:hover{
+#search:hover #sicon{
 	background-color: #f3c0b0;
 }
 /*
