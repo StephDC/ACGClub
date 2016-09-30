@@ -211,14 +211,13 @@ section h2 img{
 	line-height: 3em;
 	font-size: 1.5em;
 	text-align: center;
-	opacity: 0;
-	bottom: 0;
+	bottom: -3em;
 	background-color: black;
 	color: white;
-	transition: opacity 0.5s;
+	transition: bottom 0.5s;
 }
 .pst figure:hover figcaption{
-	opacity: 0.8;
+	bottom: 0;
 }
 section figure{
 	width: 100%;
