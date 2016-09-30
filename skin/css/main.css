@@ -39,7 +39,7 @@ header a{
 	line-height: 50px;
 	background-color: #fff;
 	color:#032f5c;
-	transition: color 0.5s, background-color 0.5s;
+	transition: color 0.3s, background-color 0.3s;
 }
 .navitem a:hover{
 	background-color:#f3c0b0;
@@ -65,7 +65,7 @@ header .selected:hover{
 	width: 110px;
 	background-color: #ffffff;
 	color: #032f5c;
-	transition: color 0.5s, background-color 0.5s;
+	transition: color 0.3s, background-color 0.3s;
 	margin: 0 0 0 1px;
 }
 #login a:hover{
@@ -82,7 +82,7 @@ header .selected:hover{
 	float: right;
 	margin: 10px 0;
 	color: #032f5c;
-	transition: color 0.5s, background-color 0.5s;
+	transition: color 0.3s, background-color 0.3s;
 }
 #lang a:hover{
 	background-color: #f3c0b0;
@@ -131,9 +131,6 @@ header .selected:hover{
 	opacity: 1;
 }
 #search:hover #sform{
-	opacity: 1;
-}
-#sform:focus{
 	opacity: 1;
 }
 /* Body */
