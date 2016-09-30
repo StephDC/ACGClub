@@ -212,6 +212,7 @@ section h2 img{
 	font-size: 1.5em;
 	text-align: center;
 	bottom: -3em;
+	opacity: 0.8;
 	background-color: black;
 	color: white;
 	transition: bottom 0.5s;
