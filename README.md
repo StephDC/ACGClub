@@ -5,15 +5,15 @@ This is still an early-stage website that contain multiple bugs and may change d
 
 ## Progress
 - [ ] Plain HTML Version of the Home Page
-  - [ ] Header
+  - [x] Header
     - [x] Nav
     - [x] Language Selector
-    - [ ] Search
-    - [ ] Login
+    - [x] Search
+    - [x] Login
   - [ ] Main
-    - [ ] Hot
+    - [x] Hot
     - [ ] COS
-    - [ ] Drawing
+    - [x] Drawing
     - [ ] Idol
 - [ ] Split the home page into modules in separate files
 - [ ] Use PHP Include to automatically generate some contents
