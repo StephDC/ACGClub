@@ -75,12 +75,11 @@ header .selected:hover{
 #lang a{
 	display: block;
 	width: 30px;
-	height: 30px;
-	line-height: 30px;
+	height: 50px;
+	line-height: 50px;
 	text-align: center;
 	font-size: 1em;
 	float: right;
-	margin: 10px 0;
 	color: #032f5c;
 	transition: color 0.3s, background-color 0.3s;
 }
@@ -90,15 +89,20 @@ header .selected:hover{
 }
 #sicon{
 	float: right;
-	margin: 0 1px;
-	cursor: pointer;
-}
-#sicon svg{
 	width: 50px;
 	height: 50px;
-	transition: fill 0.3s, background-color 0.3s;
+	margin: 0 1px;
+	cursor: pointer;
+	text-align: center;
+	transition: background-color 0.3s;
 }
-#search:hover #sicon svg{
+#sicon svg{
+	width: 36px;
+	height: 36px;
+	margin-top: 7px;
+	transition: fill 0.3s;
+}
+#search:hover #sicon{
 	background-color: #f3c0b0;
 	fill: white;
 }
@@ -107,9 +111,9 @@ header .selected:hover{
 	top: 50px;
 	right:10px;
 	width: 250px;
+	line-height: 40px;
 	text-align: center;
 	border-radius: 0 0 10px 10px;
-	line-height: 2em;
 	background-color: white;
 	opacity: 0;
 	transition: opacity 0.5s;
