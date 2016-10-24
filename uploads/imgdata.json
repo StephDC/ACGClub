@@ -1,0 +1,7 @@
+var imgdata = [{
+	figurl : 'cat.jpg',
+	figcap : 'Bright summer time'
+},
+{	figurl : 'recruit.jpg',
+	figcap : 'We are recruiting'
+}]
