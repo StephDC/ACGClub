@@ -1,12 +1,17 @@
 var pstTimer = -10;
 $('document').ready(function(){
+	/* Starting to define Search bar script */
 	$('#search').mouseout(function(){
 		$('#sform input:first').attr('disabled','');
 	});
 	$('#search').mouseover(function(){
 		$('#sform input:first').removeAttr('disabled');
 	});
-	pstTimer = setInterval(pstNext,10000);
+	/* Starting to define pst slideshow initialization script */
+	$('.pst figure:last img')[0].setAttribute('src','uploads/'+imgdata[0].figurl);
+	$('.pst figure:last figcaption')[0].innerText = imgdata[0].figcap;
+	pstNext();
+	pstTimer = setInterval(pstNext,8000);
 	$('.pst').mouseover(function(){
 		if(pstTimer >= 0){
 			clearInterval(pstTimer);
@@ -15,7 +20,7 @@ $('document').ready(function(){
 	});
 	$('.pst').mouseout(function(){
 		if(pstTimer <= 0){
-			pstTimer = setInterval(pstNext,10000);
+			pstTimer = setInterval(pstNext,8000);
 		}
 	});
 });
