@@ -8,7 +8,7 @@ $('document').ready(function(){
 		$('#sform input:first').removeAttr('disabled');
 	});
 	/* Starting to define pst slideshow initialization script */
-	$('.pst figure:last img')[0].setAttribute('src','uploads/'+imgdata[0].figurl);
+	$('.pst figure:last img')[0].setAttribute('src','uploads/pst/'+imgdata[0].figurl);
 	$('.pst figure:last figcaption')[0].innerText = imgdata[0].figcap;
 	pstNext();
 	pstTimer = setInterval(pstNext,8000);
@@ -32,7 +32,7 @@ function pstNext(){
 		$('.pst figure:first figcaption')[0].innerText = $('.pst figure:last figcaption')[0].innerText;
 		$('.pst figure').removeAttr('style');
 		pstId = (pstId +1) % imgdata.length;
-		$('.pst figure:last img')[0].setAttribute('src','uploads/'+imgdata[pstId].figurl);
+		$('.pst figure:last img')[0].setAttribute('src','uploads/pst/'+imgdata[pstId].figurl);
 		$('.pst figure:last figcaption')[0].innerText = imgdata[pstId].figcap;
 	});
 }
