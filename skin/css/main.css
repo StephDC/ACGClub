@@ -257,10 +257,11 @@ section figure img{
 	margin-top: 20px;
 	position: relative;
 	vertical-align: top;
+	overflow: hidden;
 }
 .porg #spacer{
 	width: 640px;
-	height: 18px;
+	height: 16px;
 	margin: 0;
 }
 .porg figure{
