@@ -210,7 +210,7 @@ section h2 img{
 	color: white;
 	transition: bottom 0.5s;
 }
-.pst figure:hover figcaption{
+.pst:hover figcaption{
 	bottom: 0;
 }
 section figure{
@@ -283,10 +283,25 @@ section figure img{
 }
 .pors figure{
 	margin: 0;
+	height: 528px;
 	position: absolute;
 }
 .pors figure+figure{
 	left: 297px;
+}
+.pors figure figcaption{
+	position: absolute;
+	line-height: 3em;
+	bottom: -3em;
+	opacity: 0.8;
+	width: 100%;
+	text-align: center;
+	color: white;
+	background-color: black;
+	transition: bottom 0.5s;
+}
+.pors:hover figure figcaption{
+	bottom: 0;
 }
 .pwide figure{
 	width: 300px;

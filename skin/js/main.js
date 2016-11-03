@@ -32,7 +32,9 @@ function pstNext(){
 		$('.pst figure:first figcaption')[0].innerText = $('.pst figure:last figcaption')[0].innerText;
 		$('.pst figure').removeAttr('style');
 		pstId = (pstId +1) % imgdata.length;
-		$('.pst figure:last img')[0].setAttribute('src',pstprefix+imgdata[pstId].figurl);
-		$('.pst figure:last figcaption')[0].innerText = imgdata[pstId].figcap;
+		setTimeout(function(){
+			$('.pst figure:last img')[0].setAttribute('src',pstprefix+imgdata[pstId].figurl);
+			$('.pst figure:last figcaption')[0].innerText = imgdata[pstId].figcap;
+		},1000);
 	});
 }
