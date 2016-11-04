@@ -272,6 +272,24 @@ section figure img{
 	margin-right: 13px;
 	background-color: cyan;
 }
+.porg figure img{
+	position: absolute;
+	width: 144px;
+}
+.porg figure figcaption{
+	position: absolute;
+	height: 256px;
+	width: 144px;
+	text-align: center;
+	z-index: 1;
+	background-color: black;
+	color: white;
+	opacity: 0;
+	transition: opacity 0.4s;
+}
+.porg figure:hover figcaption{
+	opacity: 0.7;
+}
 .pors{
 	display: inline-block;
 	width: 297px;
