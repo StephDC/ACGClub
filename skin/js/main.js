@@ -1,6 +1,8 @@
 var pstTimer = -10;
 var porsTimer = -10;
 $('document').ready(function(){
+	/* Starting to define Login link */
+	$('#login a')[0].setAttribute('href','https://bbs.psucssa.org/cgi-bin/webAccess/?cback=acg&pn='+document.location['pathname']);
 	/* Starting to define Search bar script */
 	$('#search').mouseout(function(){
 		$('#sform input:first').attr('disabled','');
