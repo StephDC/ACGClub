@@ -1,0 +1,7 @@
+var porsdata = [{
+	figurl : 'portrait.jpg',
+	figcap : 'Cat Cosplay'
+},
+{	figurl : 'portnext.jpg',
+	figcap : 'Next Image'
+}]

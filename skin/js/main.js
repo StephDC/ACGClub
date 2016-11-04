@@ -33,8 +33,23 @@ function pstNext(){
 		$('.pst figure').removeAttr('style');
 		pstId = (pstId +1) % imgdata.length;
 		setTimeout(function(){
-			$('.pst figure:last img')[0].setAttribute('src',pstprefix+imgdata[pstId].figurl);
+			$('.pst figure:last img')[0].setAttribute('src',imgprefix+imgdata[pstId].figurl);
 			$('.pst figure:last figcaption')[0].innerText = imgdata[pstId].figcap;
 		},1000);
 	});
+}
+var porsID = 0;
+function porsNext(){
+	$('.pors figure:first').css('left','0');
+	$('.pors figure:last').css('left','297px');
+	setTimeout(function(){
+		$('.pors figure:first img')[0].setAttribute('src',$('.pors figure:last img')[0].getAttribute('src'));
+		$('.pors figure:first figcaption')[0].innerText = $('.pors figure:last figcaption')[0].innerText;
+		$('.pors figure').removeAttr('style');
+		porsID = (porsID +1) % porsdata.length;
+		setTimeout(function(){
+			$('.pors figure:last img')[0].setAttribute('src',imgprefix+porsdata[porsID].figurl);
+			$('.pors figure:last figcaption')[0].innerText = porsdata[porsID].figcap;
+		},1000);
+	},2000);)
 }

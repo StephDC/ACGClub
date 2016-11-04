@@ -1,5 +1,5 @@
-var pstprefix = 'uploads/pst/'
-var imgdata = [{
+var imgprefix = 'uploads/'
+var pstdata = [{
 	figurl : 'cat.jpg',
 	figcap : 'Bright summer time'
 },
