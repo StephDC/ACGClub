@@ -1,0 +1,3 @@
+			<div id="login">
+				<a href="https://bbs.psucssa.org/cgi-bin/webAccess/?cback=acg&pn=<?php echo($_); ?>">Login</a>
+			</div>

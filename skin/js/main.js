@@ -45,6 +45,10 @@ $('document').ready(function(){
 	
 	
 });
+function loginTest(args){
+	$("#login a").text(args['name']);
+	$("#login a")[0].setAttribute('href','login.php');
+}
 var pstId = 0;
 function pstNext(){
 	$('.pst figure:first').animate({left:'-509px'},'slow');

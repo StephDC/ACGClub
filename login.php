@@ -24,12 +24,16 @@ if ($curlResult == False || $curlResult != "Success\n"){
 }
 // close cURL resource, and free up system resources
 curl_close($ch);
+setcookie("uName", $_POST["uName"], time()+3600, '/');
+setcookie("pWord", $_POST["pWord"], time()+3600, '/');
 ?>
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Login Info</title>
 		<meta charset="utf-8" />
+		<title>Login Info</title>
+		<script src="skin/js/jquery.js"></script>
+		<script src="skin/js/login.js"></script>
 	</head>
 	<body>
 		<h1>User Name:</h1>

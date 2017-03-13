@@ -1,12 +1,12 @@
-/*$(document).ready(function() {
-	query_Cookie()
-	$("#logout").click(function(){
+$(document).ready(function() {
+/*	$("#logout").click(function(){
 		logout_Cookie();
 	});
 	$("#update").click(function(){
 		update_Nickname();
 	});
-});*/
+*/
+});
 
 function encrypt_uName() {
 	var data = document.getElementById("uName").value;
@@ -59,7 +59,7 @@ function logout_Cookie() {
 				remCookie("uName");remCookie("pWord");
 				document.getElementById("pWord").disabled=false;
 				document.getElementById("uName").disabled=false;
-				$("#update").hide();
+				$("#login").children()[0].innerText = nickName;
 				document.getElementById("logout").disabled=true;
 			};
 		});
@@ -80,14 +80,14 @@ function backPage(addr) {
 	document.location = "https://steph.hanfucw.com/webserver/ACGClub"+addr;
 }
 
-function query_Cookie() {
+function query_Cookie(cback) {
 	var uName = getCookie("uName");
 	var pWord = getCookie("pWord");
 	if (uName != null && uName != "" && pWord != null && pWord != ""){
 		$.post("https://bbs.psucssa.org/cgi-bin/webAccess.py",{"encType":"check","uName":uName,"pWord":pWord},function(res,stat){
 			if (res == 'Success\n') {
 				document.getElementById("loginResponse").value = "You are logged in.";
-				$("#submit").click(function(){backForum();});
+				$("#submit").click(function(){backPage(cback);});
 				document.getElementById("pWord").disabled=true;
 				document.getElementById("uName").disabled=true;
 				document.getElementById("logout").disabled=false;
