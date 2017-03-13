@@ -2,6 +2,7 @@ var pstTimer = -10;
 var porsTimer = -10;
 $('document').ready(function(){
 	/* Starting to define Login link */
+	if ($('#login a').text == 'Login')
 	$('#login a')[0].setAttribute('href','https://bbs.psucssa.org/cgi-bin/webAccess/?cback=acg&pn='+document.location['pathname']);
 	/* Starting to define Search bar script */
 	$('#search').mouseout(function(){
@@ -46,8 +47,9 @@ $('document').ready(function(){
 	
 });
 function loginTest(args){
+	if (args['name']!= ''){
 	$("#login a").text(args['name']);
-	$("#login a")[0].setAttribute('href','login.php');
+	}
 }
 var pstId = 0;
 function pstNext(){
