@@ -44,9 +44,12 @@ function lookupSpot(){
 }
 
 function cancelSpot(){
+	getname = $("#rName").val();
+        if (getname == '') getname=$("#uName").val();
+	if (getname == '') getname=prompt("Please enter your name for identification purpose.");
 	data = {
 		act:"book",
-		uName:$("#rName").val(),
+		uName:getname,
 		rNum:sid,
 		tNum:"CC"
 	};
