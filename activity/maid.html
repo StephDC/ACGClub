@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link type="text/plain" rel="author" href="../humans.txt" />
+		<link type="text/css" rel="stylesheet" href="../skin/css/main.css" />
+		<script src="../skin/js/jquery.js"></script>
+		<script src="maid.js"></script>
+		<title>PSU ACG Club</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="navitem"><a href="/">Home</a></div>
+				<div class="navitem"><a href="draw">Drawing</a></div>
+				<div class="navitem"><a href="cos">COS</a></div>
+				<div class="navitem"><a href="idol">Idol</a></div>
+				<div class="navitem"><a href="game">Gaming</a></div>
+				<div class="navitem"><a class="selected" href="activity">Activity</a></div>
+			</nav>
+			<div id="login"><a href="https://bbs.psucssa.org/cgi-bin/webAccess/?cback=acg&amp;pn=/">Login</a></div>
+			<div id="search">
+				<div id="sicon">
+					<svg viewBox="0 0 24 24">
+						<g id="Icons">
+								<path id="search-big" d="M18.853,17.438l-3.604-3.604c-0.075-0.075-0.166-0.127-0.267-0.156C15.621,12.781,16,11.686,16,10.5 C16,7.463,13.537,5,10.5,5S5,7.463,5,10.5S7.463,16,10.5,16c1.186,0,2.281-0.379,3.18-1.018c0.028,0.101,0.08,0.191,0.155,0.267 l3.604,3.604c0.301,0.301,0.858,0.227,1.249-0.165C19.079,18.297,19.153,17.739,18.853,17.438z M10.5,14C8.568,14,7,12.432,7,10.5 S8.568,7,10.5,7S14,8.568,14,10.5S12.432,14,10.5,14z"/>
+						</g>
+					</svg>
+				</div>
+				<div id="sform">
+					<form action="https://baidu.com/s">
+						<input type="text" name="q1" />
+						<input type="hidden" name="q6" value="stephdc.github.io" />
+						<input type="submit" name="s" />
+					</form>
+					<!-- Google
+	     				<form action="https://www.google.com/search">
+						<input type="text" name="as_q" />
+						<input type="hidden name="as_sitesearch" value="stephdc.github.io" />
+						<input type="submit" name="s" />
+					</form>
+	     				-->
+				</div>
+			</div>
+			<div id="lang">
+				<a class="selected" href="?lang=en_US">En</a>
+				<a href="?lang=zh_CN">简</a>
+				<a href="?lang=zh_TW">正</a>
+			</div>
+		</header>
+		<main>
+			<aside id="logo">
+				<video loop muted poster="../skin/asset/bg.jpg">
+					<source type="video/mp4" src="../skin/asset/bg.mp4" />
+					<img src="../skin/asset/bg.jpg" alt="" />
+				</video>
+				<div id="bg2">
+					<svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="42"></circle></svg>
+				</div>
+				<div id="bg1">
+					<svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="42"></circle></svg>
+				</div>
+				<div><img src="../skin/asset/logo.png" alt="Logo" /></div>
+			</aside>
+			<section id="tophit">
+				<h2><img src="../skin/asset/Octicons-flame.svg" alt="" />Make a Reservation</h2>
+				<div class="hline"></div>
+				<p>Thank you for showing your interest in attending the Maid Cafe hosted by PSU ACG Allies and Cafe Wow. Please gently complete the following form to make a reservation for this event.</p>
+				<div class="form">
+					<form action="javascript:searchSpot();">
+						<input type="hidden" name="cId" value="superPassword" />
+						<h3>Party Information</h3>
+						<label for="pop" class="align">Party Size: </label>
+						<input type="number" required min="1" max="12" placeholder="1" value="1" name="pop" id="pop" /><br />
+						<label for="aHour" class="align">Arrival Time: </label>
+						<input type="number" size="2" required placeholder="13" value="13" min="1" max="19" name="aHour" id="aHour" /> <b>:</b>
+						<input type="number" size="2" required placeholder="0" value="0" min="0" max="59" name="aMin" id="aMin" /><br />
+						<h3>Contact Information</h3>
+						<label for="uName" class="align">Name: </label>
+						<input type="text" required placeholder="John Smith" name="uName" id="uName" /><br />
+						<p style="padding-left: 2em; color: gray">(Choose one from below. If both are filled, we would take your Email address.)</p>
+						<label for="pNum" class="align">Phone: </label>
+						<input type="tel" pattern="1{0,1}[2-9][0-9]{2}[2-9][0-9]{6}" placeholder="8145550130" name="pNum" id="pNum" /><br />
+						<label for="eMail" class="align">Email: </label>
+						<input type="email" placeholder="xyz5000@psu.edu" name="eMail" id="eMail" /><br />
+						<h3>Terms and Conditions</h3>
+						<div style="width: 2em; display: inline-block" height="1em"></div>
+						<input type="checkbox" id="terms" required oninvalid="this.setCustomValidity('You have to agree to our Terms and Conditions before making a reservation.')" onchange="this.setCustomValidity('')" />
+						<label for="terms">I have read the <a href="tnc.html" style="font-weight: bold">Terms and Conditions</a> for this reservation.</label><br />
+						<div style="width: 2em; display: inline-block" height="1em"></div>
+						<button id="submit">Submit</button>
+					</form>
+				</div>
+			</section>
+			<section id="lookup">
+				<h2><img src="../skin/asset/Octicons-flame.svg" alt="" />Reservation Lookup</h2>
+				<div class="hline"></div>
+				<p>Already got a reservation but could not recall the details? Fill the form below and we could look it up for you.</p>
+				<div class="form">
+					<form action="javascript:lookupSpot();">
+						<h3>Reservation Information</h3>
+						<label for="rName" class="align">Name: </label>
+						<input type="text" required placeholder="John Smith" name="rName" id="rName" /><br />
+						<label for="rNum" class="align">Reservation No.: </label>
+						<input type="text" required name="rNum" id="rNum" /><br />
+						<div class="align"></div><button id="slookup">Submit</button>
+					</form>
+			</section>
+			<section id="confirm" style="display:none">
+				<h2><img src="../skin/asset/Octicons-flame.svg" alt="" />Reservation Confirmation</h2>
+				<div class="hline"></div>
+				<p>This is your confirmation of reservation. Please take a screenshot, bring a printed copy of this page, or show this page to the reception when you come to the event.</p>
+				<pre id="confirmation"></pre>
+				<p>You may <a href="javascript:location.reload();" style="font-weight: bold;">change your reservation</a> by directly making a new reservation or <a href="javascript:cancelSpot();" style="font-weight:bold;">cancel your reservation</a> by clicking the corresponding link.</p>
+			</section>
+		</main>
+		<script>
+			if (getCookie('session_id')) {
+				sid = getCookie("session_id");
+				$("#rNum").val(sid);
+				$("#rName").focus();
+				if (getCookie('confirmed')) cf = true;
+			}
+		</script>
+		<footer>
+			<div id="fb" class="share">
+				<a href="https://www.facebook.com/VVingscosplay">
+					<figure>
+						<img src="../skin/asset/Facebook.svg" />
+						<figcaption>Facebook Page</figcaption>
+					</figure>
+				</a>
+			</div>
+			<div id="bl" class="share">
+				<a href="http://space.bilibili.com/3809123">
+					<figure>
+						<img src="../skin/asset/Bilibili.png" />
+						<figcaption>Bilibili Space</figcaption>
+					</figure>
+				</a>
+			</div>
+			<div id="wb" class="share">
+				<a href="http://weibo.com/psuacgclub">
+					<figure>
+						<img class="rounded" src="../skin/asset/Weibo.jpg" />
+						<figcaption>Official Weibo</figcaption>
+					</figure>
+				</a>
+			</div>
+			<div class="hline"></div>
+			<div id="copyleft"><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><a rel="license" href="https://www.gnu.org/licenses/gpl.html"><img alt="GPL v3" src="https://www.gnu.org/graphics/gplv3-127x51.png" /></a><br />&#169;Copyright <a href="https://github.com/StephDC">Staph. aureus</a> and <a href="https://github.com/StephDC/ACGClub/graphs/contributors">other contributors</a>. Some rights reserved. The code is licensed under <a href="https://www.gnu.org/licenses/gpl.html">GNU GPL v3</a> or later.<br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">All contents in this website</span> created by <a xmlns:cc="http://creativecommons.org/ns#" href="http://sites.psu.edu/acgclub" property="cc:attributionName" rel="cc:attributionURL">PSU ACG Club</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</div>
+		</footer>
+	</body>
+</html>

@@ -370,6 +370,12 @@ footer{
 	margin: 5px 0;
 	clear: both;
 }
+.align{
+	width: 8em;
+	display: inline-block;
+	text-align: right;
+	font-weight: bold;
+}
 #copyleft{
 	text-align: left;
 	width: 960px;
